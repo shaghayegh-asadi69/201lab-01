@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My 201 0a demo</title>
+    <meta name="description" content="This is my page about the 201 01" />
+    <link rel="stylesheet" href="reset.css" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-width: 320px;
+            font-size: 1rem;
+            font-weight: 400;
+            letter-spacing: 0.01em;
+            line-height: 1.6;
+            color: black;
+            background-color: white;
+                        font-size: 20px;
+
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            
+        }
+
+        header {
+            background-color: pink;
+        }
+
+        .header-container {
+            text-align: center;
+        
+        }
+
+        h1 {
+            color: rgb(184, 101, 136);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+         .first{
+            color: rgb(92, 92, 157);
+         }
+         .second{
+            color: rgb(144, 174, 174);
+         }
+       .third{
+        color: blueviolet;
+       }
+       .forth{
+        color: rgb(228, 119, 189);
+       }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <h1>My Page</h1>
+        </div>
+    </header>
+    <main>
+        <div class="main-container container">
+            <p class="first">Hi, I'm originally from Iran</p>
+            <p class="second">you don't want to ask a lady's age, but I am 31</p>
+            <p class="third">Where do I currently live? Liverpool</p>
+            <p class="forth">My hobbies are reading books, going to gym and spending time in the nature!</p>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container container"></div>
+    </footer>
+    <script>
+        let user;
+        let myFavColor;
+        let color;
+        let message;
+
+        alert("Hi, I'm Shaylee, welcome to my site!");
+
+        function userName() {
+            user = prompt("Please tell me your name so we can get to know one another");
+            alert("Welcome to my site " + user);
+            console.log(user);
+        }
+
+        userName();
+
+        function favColor() {
+            color = prompt(user + " , what is your fav color?").toLowerCase();
+            console.log(color);
+
+            if (color === "pink") {
+                message = "really? same here!";}
+                return message;
+           
+
+            alert("Nice, " + color + " is a great color. My favourite color is " + myFavColor);
+        }
+
+        favColor();
+    </script>
+</body>
+
+</html>
